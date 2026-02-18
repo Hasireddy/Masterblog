@@ -38,5 +38,21 @@ def add_blog():
 
 
 
+@app.route('/delete/<int:post_id>')
+def delete(post_id):
+    with open("data.json", "r") as fileobj:
+        blogs = json.loads(fileobj.read())
+
+        for blog in blogs:
+            if int(blog['id']) == post_id:
+                blogs.remove(blog)
+
+    with open("data.json", "w") as fileobj:
+        json.dump(blogs, fileobj, indent=4)
+
+    return redirect(url_for('index'))
+
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
