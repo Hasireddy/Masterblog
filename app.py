@@ -53,6 +53,35 @@ def delete(post_id):
     return redirect(url_for('index'))
 
 
+@app.route('/update/<int:post_id>', methods=['GET', 'POST'])
+def update(post_id):
+    with open("data.json", "r") as fileobj:
+        blogs = json.loads(fileobj.read())
+
+        post = None
+        for blog in blogs:
+            if int(blog['id']) == post_id:
+                post = blog
+                break
+
+        if post is None:
+            return redirect(url_for('index'))
+
+    if request.method == 'POST':
+        post['title'] = request.form.get('title')
+        post['author'] = request.form.get('author')
+        post['content'] = request.form.get('content')
+
+        with open("data.json", "w") as file:
+              json.dump(blogs, file, indent=4)
+
+        return redirect(url_for('index'))
+
+    # Step 6: GET request → show update form with current values
+    return render_template('update.html', post=post)
+
+
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
