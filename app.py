@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 import json
 
 app = Flask(__name__)
@@ -10,6 +10,13 @@ def index():
         blogs = json.loads(fileobj.read())
         return render_template("index.html", blogs=blogs)
 
+
+
+@app.route('/add', methods=['GET', 'POST'])
+def add_blog():
+    if request.method == 'POST':
+        pass
+    return render_template("add.html")
 
 
 
