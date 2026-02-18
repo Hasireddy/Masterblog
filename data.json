@@ -1,12 +1,68 @@
 [
-    {"id": 1, "author": "John Doe", "title": "First Post", "content": "This is my first post."},
-    {"id": 2, "author": "Jane Doe", "title": "Second Post", "content": "This is another post."},
-    {"id": 3, "author": "Alice Smith", "title": "Tech Trends 2026", "content": "Exploring upcoming tech trends."},
-    {"id": 4, "author": "Bob Johnson", "title": "Healthy Living Tips", "content": "Tips for a healthier lifestyle."},
-    {"id": 5, "author": "Carol White", "title": "Travel Diaries", "content": "Sharing my adventures around the world."},
-    {"id": 6, "author": "David Brown", "title": "Cooking 101", "content": "Easy recipes for beginners."},
-    {"id": 7, "author": "Eve Davis", "title": "Fitness Motivation", "content": "How to stay motivated for workouts."},
-    {"id": 8, "author": "Frank Miller", "title": "Book Reviews", "content": "Reviewing my favorite novels."},
-    {"id": 9, "author": "Grace Lee", "title": "Photography Tips", "content": "Improve your photography skills."},
-    {"id": 10, "author": "Henry Wilson", "title": "Mindfulness Practices", "content": "Daily mindfulness exercises for peace."}
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post."
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is another post."
+    },
+    {
+        "id": 3,
+        "author": "Alice Smith",
+        "title": "Tech Trends 2026",
+        "content": "Exploring upcoming tech trends."
+    },
+    {
+        "id": 4,
+        "author": "Bob Johnson",
+        "title": "Healthy Living Tips",
+        "content": "Tips for a healthier lifestyle."
+    },
+    {
+        "id": 5,
+        "author": "Carol White",
+        "title": "Travel Diaries",
+        "content": "Sharing my adventures around the world."
+    },
+    {
+        "id": 6,
+        "author": "David Brown",
+        "title": "Cooking 101",
+        "content": "Easy recipes for beginners."
+    },
+    {
+        "id": 7,
+        "author": "Eve Davis",
+        "title": "Fitness Motivation",
+        "content": "How to stay motivated for workouts."
+    },
+    {
+        "id": 8,
+        "author": "Frank Miller",
+        "title": "Book Reviews",
+        "content": "Reviewing my favorite novels."
+    },
+    {
+        "id": 9,
+        "author": "Grace Lee",
+        "title": "Photography Tips",
+        "content": "Improve your photography skills."
+    },
+    {
+        "id": 10,
+        "author": "Henry Wilson",
+        "title": "Mindfulness Practices",
+        "content": "Daily mindfulness exercises for peace."
+    },
+    {
+        "id": "11",
+        "title": "Python",
+        "author": "alex",
+        "content": "Python fundamentals"
+    }
 ]
