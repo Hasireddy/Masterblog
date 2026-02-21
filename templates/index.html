@@ -18,5 +18,7 @@
              <a href="{{ url_for('update', post_id=blog['id']) }}" class="update-btn">Update</a>
         </div>
     {% endfor %}
+    {% else %}
+        <p>No posts yet. Be the first to add one!</p>
 </body>
 </html>

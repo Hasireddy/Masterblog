@@ -50,8 +50,11 @@ def add_blog():
 
 @app.route('/delete/<int:post_id>')
 def delete(post_id):
+    """This route removes the specified blog post
+    from the blogs"""
+
     with open("data.json", "r") as fileobj:
-        blogs = json.loads(fileobj.read())
+        blogs = json.load(fileobj)
 
         for blog in blogs:
             if int(blog['id']) == post_id:
@@ -65,8 +68,10 @@ def delete(post_id):
 
 @app.route('/update/<int:post_id>', methods=['GET', 'POST'])
 def update(post_id):
+    """This route updates a specified blog post"""
+
     with open("data.json", "r") as fileobj:
-        blogs = json.loads(fileobj.read())
+        blogs = json.load(fileobj)
 
         post = None
         for blog in blogs:
@@ -87,7 +92,7 @@ def update(post_id):
 
         return redirect(url_for('index'))
 
-    # Step 6: GET request → show update form with current values
+    # GET request → show update form with current values
     return render_template('update.html', post=post)
 
 
