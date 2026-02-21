@@ -20,13 +20,18 @@ def index():
 
 @app.route('/add', methods=['GET', 'POST'])
 def add_blog():
-    #Read data rom the file
+    """This route allows user to add a
+    new blog post"""
+
+    #Read data from the file
     with open("data.json", "r") as fileobj:
-        blogs = json.loads(fileobj.read())
+        blogs = json.load(fileobj)
+        length = len(blogs)
+        last_index = len(blogs)
 
     if request.method == 'POST':
         blog = {
-            "id": request.form.get("id"),
+            "id": last_index + 1,
             "title": request.form.get("title"),
             "author": request.form.get("author"),
             "content": request.form.get("content")

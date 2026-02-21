@@ -58,5 +58,11 @@
         "author": "Henry Wilson",
         "title": "Mindfulness Practices",
         "content": "Daily mindfulness exercises for peace."
+    },
+    {
+        "id": 11,
+        "title": "python",
+        "author": "Alex george",
+        "content": "Python fundamentals"
     }
 ]
