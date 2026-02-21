@@ -3,6 +3,7 @@ body {
     background-color: #F5F5F5;
     padding: 20px;
     color: #333;
+    text-align: center
 }
 
 h1 {
@@ -26,13 +27,41 @@ h1 {
     margin: 10px 0;
 }
 
+
 form {
-        width: 400px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select, textarea {
+  width: 40%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 120px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
 
 .delete-btn, .update-btn {
@@ -48,3 +77,22 @@ form {
 .delete-btn:hover {
     background-color: #c0392b;
 }
+
+a.back-btn {
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+
+a.back-btn:hover {
+            background-color: #2980b9;
+        }

@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Add Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <form action="{{url_for('add_blog')}}" method="POST">
@@ -12,9 +13,9 @@
         <label for="author">Author:</label>
         <input type = "text" id="author" name = "author"  required />
         <label for="content">Content:</label>
-        <textarea id="content" name="content" rows="5" required></textarea>
+        <textarea id="content" name="content" rows="5" required></textarea><br/>
         <input type="submit" value="Submit">
     </form>
-    <a href="{{ url_for('index') }}">Back to Home</a>
+    <a href="{{ url_for('index') }}"  class="back-btn">Back to Home</a>
 </body>
 </html>

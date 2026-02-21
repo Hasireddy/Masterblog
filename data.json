@@ -60,9 +60,9 @@
         "content": "Daily mindfulness exercises for peace."
     },
     {
-        "id": 11,
-        "title": "python",
-        "author": "Alex george",
-        "content": "Python fundamentals"
+        "id": 12,
+        "title": "Flask",
+        "author": "John Alex",
+        "content": "My first Flask blog"
     }
 ]
