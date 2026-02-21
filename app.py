@@ -6,9 +6,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    with open("data.json", "r") as fileobj:
-        blogs = json.loads(fileobj.read())
-        return render_template("index.html", blogs=blogs)
+    """This route will display all blog posts"""
+    try:
+        with open("data.json", "r") as fileobj:
+            blogs = json.load(fileobj)
+            return render_template("index.html", blogs=blogs)
+
+    except FileNotFoundError:
+        print("File not found")
 
 
 
